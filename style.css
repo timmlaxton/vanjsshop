@@ -48,7 +48,8 @@ nav {
 
 .slider {
   background: url("./img/wood.jpg");
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden;
 }
 
 .sliderWrapper {
@@ -153,4 +154,35 @@ nav {
 }
 .sliderItem:nth-child(5) .sliderPrice {
   background-color: #33ff9f;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.featureIcon {
+  width: 25%;
+  height: 50px;
+}
+
+.featureTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.featuredDes {
+  color: gray;
+  width: 50%;
+  height: 100%;
 }
