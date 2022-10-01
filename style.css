@@ -37,7 +37,6 @@ nav {
 .navBottom {
   display: flex;
   justify-content: center;
-  justify-content: center;
 }
 
 .menuItem {
@@ -45,4 +44,64 @@ nav {
   cursor: pointer;
   color: lightgray;
   font-weight: 400;
+}
+
+.slider {
+  background: url("./img/wood.jpg");
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}
+
+.sliderWrapper {
+  display: flex;
+  width: 500vw;
+}
+
+.sliderBg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #0065ff;
+}
+
+.sliderItem {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sliderBg {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sliderTitle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.sliderPrice {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+.sliderImage {
+  z-index: 1;
 }
