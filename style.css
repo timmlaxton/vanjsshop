@@ -61,7 +61,6 @@ nav {
   height: 750px;
   border-radius: 50%;
   position: absolute;
-  background-color: #0065ff;
 }
 
 .sliderItem {
@@ -101,7 +100,40 @@ nav {
   border: 1px solid gray;
   z-index: 1;
 }
+.buyButton {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  border: 1px solid gray;
+  background-color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background-color: #fff;
+  color: black;
+}
 
 .sliderImage {
   z-index: 1;
+}
+
+.sliderItem:nth-child(1) .sliderBg {
+  background-color: #0065ff;
+}
+.sliderItem:nth-child(2) .sliderBg {
+  background-color: #ff5733;
+}
+.sliderItem:nth-child(3) .sliderBg {
+  background-color: #83ff33;
+}
+.sliderItem:nth-child(4) .sliderBg {
+  background-color: #ff33e6;
+}
+.sliderItem:nth-child(5) .sliderBg {
+  background-color: #33ff9f;
 }
