@@ -33,3 +33,16 @@ nav {
   border-bottom: 2px solid;
   cursor: pointer;
 }
+
+.navBottom {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+}
