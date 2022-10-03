@@ -101,3 +101,9 @@ menuItems.forEach((item, index) => {
     });
   });
 });
+
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = chosenProduct.colors[index].img;
+  });
+});
