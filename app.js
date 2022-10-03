@@ -79,8 +79,25 @@ const products = [
   },
 ];
 
+let chosenProduct = products[0];
+
+const currentProductImg = document.querySelector(".productImg");
+const currentProductTitle = document.querySelector(".productTitle");
+const currentProductPrice = document.querySelector(".productPrice");
+const currentProductColors = document.querySelectorAll(".color");
+const currentProductSizes = document.querySelectorAll(".sizes");
+
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
+
+    chosenProduct = products[index];
+
+    currentProductTitle.textContent = chosenProduct.title;
+    currentProductPrice.textContent = "$" + chosenProduct.price;
+    currentProductImg.src = chosenProduct.colors[0].img;
+    currentProductColors.forEach((color, index) => {
+      color.style.backgroundColor = chosenProduct.colors[index].code;
+    });
   });
 });
